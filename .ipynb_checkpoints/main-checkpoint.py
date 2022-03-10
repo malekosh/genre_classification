@@ -16,12 +16,13 @@ def go(config: DictConfig):
     root_path = hydra.utils.get_original_cwd()
 
     # Check which steps we need to execute
-    if isinstance(config["main"]["execute_steps"], str):
-        # This was passed on the command line as a comma-separated list of steps
-        steps_to_execute = config["main"]["execute_steps"].split(",")
-    else:
-        assert isinstance(config["main"]["execute_steps"], list)
-        steps_to_execute = config["main"]["execute_steps"]
+    print(config["main"]["execute_steps"])
+    # if isinstance(config["main"]["execute_steps"], str):
+    #     # This was passed on the command line as a comma-separated list of steps
+    #     steps_to_execute = config["main"]["execute_steps"].split(",")
+    # else:
+    #     assert isinstance(config["main"]["execute_steps"], list)
+    steps_to_execute = config["main"]["execute_steps"]
 
     # Download step
     if "download" in steps_to_execute:
@@ -92,7 +93,7 @@ def go(config: DictConfig):
             parameters={
                 "train_data": "data_train.csv:latest",
                 "model_config": model_config,
-                "export_artifact": config["data"]["export_artifact"],
+                "export_artifact": config["random_forest_pipeline"]["export_artifact"],
                 "val_size": config["data"]["val_size"],
                 "stratify":config["data"]["stratify"]
                 
