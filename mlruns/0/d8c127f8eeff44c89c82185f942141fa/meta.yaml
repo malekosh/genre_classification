@@ -1,0 +1,15 @@
+artifact_uri: file:///home/udacity/genre_classification/mlruns/0/d8c127f8eeff44c89c82185f942141fa/artifacts
+end_time: 1646915777438
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: d8c127f8eeff44c89c82185f942141fa
+run_uuid: d8c127f8eeff44c89c82185f942141fa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1646915663993
+status: 3
+tags: []
+user_id: udacity

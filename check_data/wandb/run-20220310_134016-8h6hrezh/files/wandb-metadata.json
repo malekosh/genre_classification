@@ -1,0 +1,33 @@
+{
+    "os": "Linux-5.8.0-44-generic-x86_64-with-glibc2.31",
+    "python": "3.9.10",
+    "heartbeatAt": "2022-03-10T12:40:17.424934",
+    "startedAt": "2022-03-10T12:40:16.681251",
+    "docker": null,
+    "gpu": "Quadro RTX 5000",
+    "gpu_count": 2,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "-s",
+        "-vv",
+        ".",
+        "--reference_artifact",
+        "exercise_14/preprocessed_data.csv:latest",
+        "--sample_artifact",
+        "preprocessed_data.csv:latest",
+        "--ks_alpha",
+        "0.05"
+    ],
+    "state": "running",
+    "program": "/home/udacity/miniconda3/envs/mlflow-acbfa4ee4aa9be3158264a605e4861dd8a78622b/bin/pytest",
+    "git": {
+        "remote": "https://github.com/malekosh/genre_classification.git",
+        "commit": "996ddd6d972cb51016b854ac7487445750a28085"
+    },
+    "email": "malek.a.husseini@gmail.com",
+    "root": "/home/udacity/genre_classification",
+    "host": "husseini",
+    "username": "udacity",
+    "executable": "/home/udacity/miniconda3/envs/mlflow-acbfa4ee4aa9be3158264a605e4861dd8a78622b/bin/python"
+}
